@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>义乌市浓似进出口有限公司 - 专业国际贸易服务</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F52BA',
+                        secondary: '#37CAEC',
+                        accent: '#FF9F1C',
+                        dark: '#1A365D',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .hover-lift {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .hover-lift:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-gray-800 overflow-x-hidden">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <span class="text-primary text-2xl font-bold">浓似进出口</span>
+                    </a>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">首页</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">关于我们</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary font-medium transition-colors">产品中心</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition-colors">服务项目</a>
+                    <a href="#markets" class="text-gray-700 hover:text-primary font-medium transition-colors">市场分布</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">联系我们</a>
+                </nav>
+                
+                <!-- 联系按钮 -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full transition-colors shadow-md hover:shadow-lg">
+                        立即咨询
+                    </a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="#home" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">首页</a>
+                <a href="#about" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">关于我们</a>
+                <a href="#products" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">产品中心</a>
+                <a href="#services" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">服务项目</a>
+                <a href="#markets" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">市场分布</a>
+                <a href="#contact" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">联系我们</a>
+                <a href="#contact" class="block bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-center transition-colors shadow-md hover:shadow-lg">
+                    立即咨询
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="pt-24 md:pt-0 min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute -right-10 -top-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute left-1/4 bottom-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-dark mb-6">
+                        连接全球市场的<br>
+                        <span class="text-primary">贸易桥梁</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 max-w-lg">
+                        义乌市浓似进出口有限公司专注于为全球客户提供高效、可靠的国际贸易服务，连接中国制造与世界市场。
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full text-center font-medium transition-all shadow-lg hover:shadow-xl">
+                            了解更多
+                        </a>
+                        <a href="#products" class="bg-white hover:bg-gray-50 text-primary border border-primary px-8 py-3 rounded-full text-center font-medium transition-all shadow-md hover:shadow-lg">
+                            浏览产品
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 flex items-center gap-6">
+                        <div class="flex -space-x-2">
+                            <img src="https://picsum.photos/id/1001/100/100" alt="客户头像" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://picsum.photos/id/1002/100/100" alt="客户头像" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://picsum.photos/id/1003/100/100" alt="客户头像" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://picsum.photos/id/1004/100/100" alt="客户头像" class="w-10 h-10 rounded-full border-2 border-white">
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-1">
+                                <div class="flex text-accent">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span class="ml-2 font-medium">4.9/5</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">来自全球500+客户的信赖</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl hover-lift">
+                        <img src="https://picsum.photos/id/1031/800/600" alt="国际贸易物流" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-40 h-40 bg-accent/20 rounded-full blur-2xl z-0"></div>
+                    <div class="absolute -top-6 -right-6 w-40 h-40 bg-primary/20 rounded-full blur-2xl z-0"></div>
+                    
+                    <!-- 数据卡片 -->
+                    <div class="absolute -bottom-10 -left-10 bg-white p-4 rounded-xl shadow-xl z-20 hover-lift hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i class="fa fa-globe text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">覆盖国家</p>
+                                <p class="text-2xl font-bold text-dark">50+</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -top-10 -right-10 bg-white p-4 rounded-xl shadow-xl z-20 hover-lift hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center text-accent">
+                                <i class="fa fa-cubes text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">年贸易额</p>
+                                <p class="text-2xl font-bold text-dark">¥2.5亿+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 波浪底部装饰 -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" class="w-full h-auto fill-white">
+                <path d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 公司简介 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">关于我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">义乌市浓似进出口有限公司成立于2010年，是一家专业从事进出口贸易的综合性企业，总部位于全球知名的小商品集散中心——义乌。</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://picsum.photos/id/1048/800/600" alt="公司办公环境" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/5 rounded-full -z-10"></div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-dark mb-6">我们的故事</h3>
+                    <p class="text-gray-600 mb-6">
+                        自成立以来，公司凭借义乌得天独厚的货源优势和便捷的物流网络，与国内外数千家供应商建立了长期稳定的合作关系，产品涵盖家居用品、五金工具、工艺品、玩具、纺织服装等多个品类。
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        我们致力于为全球客户提供一站式采购解决方案，从产品选型、质量控制到物流运输，全程专业服务，确保每一笔交易都安全、高效、满意。
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-50 p-5 rounded-xl">
+                            <div class="text-primary text-3xl mb-3">
+                                <i class="fa fa-handshake-o"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">诚信为本</h4>
+                            <p class="text-gray-600 text-sm">坚持诚信经营，赢得客户长久信赖</p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-xl">
+                            <div class="text-primary text-3xl mb-3">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">创新进取</h4>
+                            <p class="text-gray-600 text-sm">不断创新服务模式，提升竞争力</p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-xl">
+                            <div class="text-primary text-3xl mb-3">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">客户至上</h4>
+                            <p class="text-gray-600 text-sm">以客户需求为中心，提供优质服务</p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-xl">
+                            <div class="text-primary text-3xl mb-3">
+                                <i class="fa fa-line-chart"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">追求卓越</h4>
+                            <p class="text-gray-600 text-sm">精益求精，追求卓越的产品质量</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
+                        了解更多公司信息
+                        <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 公司数据 -->
+            <div class="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-4">
+                        <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="13">0</div>
+                        <p class="text-gray-600">年行业经验</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="500">0</div>
+                        <p class="text-gray-600">合作供应商</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="2000">0</div>
+                        <p class="text-gray-600">合作客户</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="50">0</div>
+                        <p class="text-gray-600">覆盖国家</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品中心 -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">产品中心</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">我们提供丰富多样的产品品类，满足全球客户的不同采购需求，所有产品均经过严格的质量检测。</p>
+            </div>
+            
+            <!-- 产品分类 -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="product-filter active bg-primary text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
+                    全部产品
+                </button>
+                <button class="product-filter bg-white text-gray-700 px-6 py-2 rounded-full text-sm font-medium transition-colors hover:bg-gray-100">
+                    家居用品
+                </button>
+                <button class="product-filter bg-white text-gray-700 px-6 py-2 rounded-full text-sm font-medium transition-colors hover:bg-gray-100">
+                    五金工具
+                </button>
+                <button class="product-filter bg-white text-gray-700 px-6 py-2 rounded-full text-sm font-medium transition-colors hover:bg-gray-100">
+                    工艺品
+                </button>
+                <button class="product-filter bg-white text-gray-700 px-6 py-2 rounded-full text-sm font-medium transition-colors hover:bg-gray-100">
+                    玩具
+                </button>
+                <button class="product-filter bg-white text-gray-700 px-6 py-2 rounded-full text-sm font-medium transition-colors hover:bg-gray-100">
+                    纺织服装
+                </button>
+            </div>
+            
+            <!-- 产品列表 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- 产品1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1058/400/300" alt="家居用品" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
+                            热销
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">创意家居收纳系列</h3>
+                            <span class="text-primary font-bold">¥12-35</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">多种款式可选，实用美观，节省空间</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <span class="text-gray-500 ml-1">(42)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1059/400/300" alt="五金工具" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">多功能工具套装</h3>
+                            <span class="text-primary font-bold">¥85-150</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">高品质材质，耐用性强，适用于多种场景</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span class="text-gray-500 ml-1">(78)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1060/400/300" alt="工艺品" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            新品
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">手工陶瓷工艺品</h3>
+                            <span class="text-primary font-bold">¥45-120</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">精美手工制作，独特设计，收藏价值高</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span class="text-gray-500 ml-1">(23)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1062/400/300" alt="玩具" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">益智儿童玩具系列</h3>
+                            <span class="text-primary font-bold">¥25-80</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">安全环保材料，促进儿童智力发展</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <span class="text-gray-500 ml-1">(56)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品5 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1063/400/300" alt="纺织服装" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">时尚休闲服装</h3>
+                            <span class="text-primary font-bold">¥35-150</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">舒适面料，时尚设计，多种款式可选</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span class="text-gray-500 ml-1">(34)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1066/400/300" alt="家居用品" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
+                            热销
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">厨房用具套装</h3>
+                            <span class="text-primary font-bold">¥65-200</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">食品级材质，安全耐用，易于清洁</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span class="text-gray-500 ml-1">(92)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品7 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1068/400/300" alt="工艺品" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">装饰画系列</h3>
+                            <span class="text-primary font-bold">¥55-300</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">现代简约风格，提升空间艺术感</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span class="text-gray-500 ml-1">(28)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品8 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-lift group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://picsum.photos/id/1069/400/300" alt="五金工具" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            新品
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg text-dark">电动工具系列</h3>
+                            <span class="text-primary font-bold">¥150-800</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">高效节能，操作简便，安全可靠</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-accent text-sm">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span class="text-gray-500 ml-1">(15)</span>
+                            </div>
+                            <a href="#" class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-white border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-medium transition-colors shadow-md hover:shadow-lg">
+                    查看更多产品
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">我们的服务</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">我们提供全方位的进出口贸易服务，从产品采购到物流配送，为您的国际贸易保驾护航。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 服务1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-shopping-bag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">产品采购</h3>
+                    <p class="text-gray-600 mb-6">
+                        依托义乌丰富的货源优势，为客户提供一站式产品采购服务，确保产品质量和价格优势。
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>供应商筛选与评估</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>产品价格谈判</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>小批量试单服务</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">质量控制</h3>
+                    <p class="text-gray-600 mb-6">
+                        专业的质检团队，严格把控产品质量，确保所有出口产品符合国际标准和客户要求。
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>生产过程监控</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>成品检验与测试</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>质量问题解决方案</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务3 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">物流运输</h3>
+                    <p class="text-gray-600 mb-6">
+                        与多家国际物流公司合作，提供海运、空运、陆运等多种运输方式，确保货物安全准时送达。
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>国际海运与空运</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>仓储与配送服务</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>运输跟踪与保险</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务4 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">报关清关</h3>
+                    <p class="text-gray-600 mb-6">
+                        专业的报关团队，熟悉各国海关政策和流程，提供高效的报关清关服务，确保货物顺利通关。
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>出口报关代理</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>进口清关服务</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>单证制作与审核</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务5 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">国际贸易结算</h3>
+                    <p class="text-gray-600 mb-6">
+                        提供安全便捷的国际贸易结算服务，多种支付方式选择，保障资金安全和交易顺利进行。
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>信用证操作</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>TT汇款服务</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>外汇结算咨询</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 服务6 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-comments-o"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">商务咨询</h3>
+                    <p class="text-gray-600 mb-6">
+                        提供专业的国际贸易咨询服务，包括市场分析、政策解读、贸易风险评估等，助力企业拓展国际市场。
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>市场调研与分析</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>贸易政策咨询</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>品牌海外推广</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场分布 -->
+    <section id="markets" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">全球市场分布</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">我们的业务已覆盖全球50多个国家和地区，与世界各地的客户建立了长期稳定的合作关系。</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-lg p-6 h-full">
+                        <h3 class="text-xl font-bold text-dark mb-6">主要出口市场</h3>
+                        <div class="h-80">
+                            <canvas id="marketChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-lg p-6 h-full">
+                        <h3 class="text-xl font-bold text-dark mb-6">重点合作区域</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="border border-gray-100 rounded-lg p-5 hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <h4 class="font-bold">欧洲市场</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-3">覆盖英国、德国、法国、意大利、西班牙等20多个国家</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-100 rounded-lg p-5 hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <h4 class="font-bold">北美市场</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-3">主要包括美国、加拿大、墨西哥等国家</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-100 rounded-lg p-5 hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <h4 class="font-bold">东南亚市场</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-3">覆盖新加坡、马来西亚、泰国、印度尼西亚等国家</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-100 rounded-lg p-5 hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-3">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <h4 class="font-bold">中东市场</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-3">主要包括阿联酋、沙特阿拉伯、以色列等国家</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">我们的优势</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center text-primary text-sm mr-3 flex-shrink-0">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="text-gray-600">熟悉各地区市场需求和文化特点，能提供针对性的产品方案</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center text-primary text-sm mr-3 flex-shrink-0">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="text-gray-600">与当地物流和分销渠道建立良好合作关系，降低运营成本</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center text-primary text-sm mr-3 flex-shrink-0">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <p class="text-gray-600">专业团队跟踪国际贸易政策变化，有效规避贸易风险</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">客户评价</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">来自全球客户的真实评价，见证我们的专业服务和产品质量。</p>
+            </div>
+            
+            <div class="testimonial-slider relative">
+                <div class="overflow-hidden">
+                    <div class="testimonial-track flex transition-transform duration-500" style="transform: translateX(0)">
+                        <!-- 评价1 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 rounded-xl p-8 h-full hover-lift">
+                                <div class="flex text-accent mb-4">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "与浓似进出口合作已有5年，他们的产品质量始终如一，服务专业高效。无论是小批量采购还是大额订单，都能得到妥善处理，是我们在中国最信赖的合作伙伴。"
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="https://picsum.photos/id/1012/100/100" alt="客户头像" class="w-12 h-12 rounded-full mr-4">
+                                    <div>
+                                        <h4 class="font-bold">John Smith</h4>
+                                        <p class="text-gray-500 text-sm">美国ABC贸易公司</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 评价2 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 rounded-xl p-8 h-full hover-lift">
+                                <div class="flex text-accent mb-4">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "浓似进出口的质检团队非常专业，帮助我们避免了很多质量问题。他们的物流安排也很高效，货物总能按时到达欧洲。强烈推荐给需要从中国进口商品的企业！"
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="https://picsum.photos/id/1013/100/100" alt="客户头像" class="w-12 h-12 rounded-full mr-4">
+                                    <div>
+                                        <h4 class="font-bold">Sophie Laurent</h4>
+                                        <p class="text-gray-500 text-sm">法国LUX家居用品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 评价3 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 rounded-xl p-8 h-full hover-lift">
+                                <div class="flex text-accent mb-4">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "作为一家小型零售商，我们需要灵活的采购方案和小批量订货服务。浓似进出口满足了我们的需求，他们的团队耐心专业，总能找到我们需要的产品。"
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="https://picsum.photos/id/1014/100/100" alt="客户头像" class="w-12 h-12 rounded-full mr-4">
+                                    <div>
+                                        <h4 class="font-bold">David Kim</h4>
+                                        <p class="text-gray-500 text-sm">韩国首尔贸易公司</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 评价4 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 rounded-xl p-8 h-full hover-lift">
+                                <div class="flex text-accent mb-4">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "从产品选型到最终交货，浓似进出口提供了全程无忧的服务。他们对市场的了解帮助我们拓展了产品线，增加了销售额。期待未来继续深化合作！"
+                                </p>
+                                <div class="flex items-center">
+                                    <img src="https://picsum.photos/id/1015/100/100" alt="客户头像" class="w-12 h-12 rounded-full mr-4">
+                                    <div>
+                                        <h4 class="font-bold">Marco Rossi</h4>
+                                        <p class="text-gray-500 text-sm">意大利米兰礼品公司</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 滑动按钮 -->
+                <button class="testimonial-prev absolute top-1/2 -left-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors z-10 md:left-0">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-next absolute top-1/2 -right-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors z-10 md:right-0">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+                
+                <!-- 指示器 -->
+                <div class="testimonial-dots flex justify-center mt-8 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-primary" data-index="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300" data-index="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300" data-index="2"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300" data-index="3"></button>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">联系我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">无论您有任何疑问或需求，我们的团队都将竭诚为您服务，欢迎随时联系我们。</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-dark mb-6">发送询价</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">您的姓名</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="请输入您的姓名" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">电子邮箱</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="请输入您的邮箱" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="company" class="block text-gray-700 font-medium mb-2">公司名称</label>
+                                <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="请输入您的公司名称">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">主题</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                    <option value="">请选择咨询主题</option>
+                                    <option value="product">产品咨询</option>
+                                    <option value="price">价格查询</option>
+                                    <option value="order">订单跟进</option>
+                                    <option value="cooperation">合作洽谈</option>
+                                    <option value="other">其他问题</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">留言内容</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="请输入您的留言内容" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-md hover:shadow-lg">
+                                发送留言
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-dark mb-6">联系方式</h3>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">公司地址</h4>
+                                    <p class="text-gray-600">浙江省义乌市福田街道国际商贸城X区XX号</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">联系电话</h4>
+                                    <p class="text-gray-600">+86 579-XXXXXXXX</p>
+                                    <p class="text-gray-600">+86 138-XXXX-XXXX</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">电子邮箱</h4>
+                                    <p class="text-gray-600">info@nongsijinchu.com</p>
+                                    <p class="text-gray-600">sales@nongsijinchu.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">工作时间</h4>
+                                    <p class="text-gray-600">周一至周五: 9:00 - 18:00</p>
+                                    <p class="text-gray-600">周六: 9:00 - 12:00 (预约制)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-4">关注我们</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-full flex items-center justify-center transition-colors">
+                                    <i class="fa fa-weixin"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-full flex items-center justify-center transition-colors">
+                                    <i class="fa fa-weibo"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-full flex items-center justify-center transition-colors">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-full flex items-center justify-center transition-colors">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary text-primary hover:text-white rounded-full flex items-center justify-center transition-colors">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">位置地图</h4>
+                            <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden relative">
+                                <!-- 这里可以放置实际地图 -->
+                                <img src="https://picsum.photos/id/1031/800/400" alt="公司位置地图" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                                    <button class="bg-primary text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        查看详细地图
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">浓似进出口</h3>
+                    <p class="text-gray-400 mb-6">
+                        义乌市浓似进出口有限公司是一家专业从事进出口贸易的综合性企业，致力于连接中国制造与全球市场。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-weixin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-weibo text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">快速链接</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">首页</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">关于我们</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition-colors">产品中心</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">服务项目</a></li>
+                        <li><a href="#markets" class="text-gray-400 hover:text-white transition-colors">市场分布</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">产品分类</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">家居用品</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">五金工具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">工艺品</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">玩具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">纺织服装</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">更多产品</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">联系方式</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-gray-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">浙江省义乌市福田街道国际商贸城X区XX号</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">+86 579-XXXXXXXX</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope-o text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">info@nongsijinchu.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2023 义乌市浓似进出口有限公司 版权所有 | 浙ICP备XXXXXXXX号
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">隐私政策</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">服务条款</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90 z-50">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-4');
+                navbar.classList.add('shadow-lg');
+                
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                navbar.classList.add('py-4');
+                navbar.classList.remove('py-2');
+                navbar.classList.remove('shadow-lg');
+                
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动菜单
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // 返回顶部
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 数字计数动画
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        
+        const observerOptions = {
+            threshold: 0.5
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(() => {
+                            counter.innerText = Math.ceil(count + increment);
+                        }, 1);
+                    } else {
+                        counter.innerText = target;
+                        observer.unobserve(counter);
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+        
+        // 市场分布图表
+        const ctx = document.getElementById('marketChart').getContext('2d');
+        const marketChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['欧洲', '北美', '东南亚', '中东', '南美', '其他'],
+                datasets: [{
+                    label: '市场分布比例',
+                    data: [35, 25, 15, 10, 10, 5],
+                    backgroundColor: [
+                        '#0F52BA',
+                        '#37CAEC',
+                        '#FF9F1C',
+                        '#1A365D',
+                        '#4CC9F0',
+                        '#90E0EF'
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            padding: 20,
+                            font: {
+                                size: 12
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // 客户评价轮播
+        const track = document.querySelector('.testimonial-track');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevButton = document.querySelector('.testimonial-prev');
+        const nextButton = document.querySelector('.testimonial-next');
+        const dots = document.querySelectorAll('.testimonial-dots button');
+        
+        let currentIndex = 0;
+        let slideWidth = 100;
+        
+        function updateSlideWidth() {
+            if (window.innerWidth >= 1024) {
+                slideWidth = 100 / 3; // 大屏幕显示3个
+            } else if (window.innerWidth >= 768) {
+                slideWidth = 50; // 中屏幕显示2个
+            } else {
+                slideWidth = 100; // 小屏幕显示1个
+            }
+            updateSlidePosition();
+        }
+        
+        function updateSlidePosition() {
+            track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+            
+            // 更新指示器
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('bg-primary');
+                    dot.classList.remove('bg-gray-300');
+                } else {
+                    dot.classList.add('bg-gray-300');
+                    dot.classList.remove('bg-primary');
+                }
+            });
+        }
+        
+        prevButton.addEventListener('click', () => {
+            currentIndex = Math.max(currentIndex - 1, 0);
+            updateSlidePosition();
+        });
+        
+        nextButton.addEventListener('click', () => {
+            currentIndex = Math.min(currentIndex + 1, slides.length - (window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1));
+            updateSlidePosition();
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlidePosition();
+            });
+        });
+        
+        window.addEventListener('resize', updateSlideWidth);
+        updateSlideWidth();
+        
+        // 产品筛选
+        const filterButtons = document.querySelectorAll('.product-filter');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 移除所有按钮的active状态
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-700');
+                });
+                
+                // 添加当前按钮的active状态
+                button.classList.add('active', 'bg-primary', 'text-white');
+                button.classList.remove('bg-white', 'text-gray-700');
+                
+                // 这里可以添加实际的筛选逻辑
+            });
+        });
+        
+        // 表单提交
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 模拟表单提交
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fa fa-spinner fa-spin mr-2"></i> 发送中...';
+            
+            setTimeout(() => {
+                alert('您的留言已成功发送，我们将尽快与您联系！');
+                this.reset();
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalText;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
